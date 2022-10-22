@@ -23,5 +23,6 @@ namespace LabMethods.ViewModels.Base
             OnPropertyChanged(PropertyName);
             return true;
         }
-    }
+
+         }
 }

@@ -1,17 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWPF>true</UseWPF>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-    <Folder Include="Models\" />
-    <Folder Include="Services\" />
-    <Folder Include="Infrastracture\" />
-  </ItemGroup>
+	<ItemGroup>
+		<Folder Include="Data\1\" />
+		<Folder Include="Models\" />
+		<Folder Include="Services\" />
+		<Folder Include="Infrastracture\" />
+		<Folder Include="ViewModels\Base\" />
+	</ItemGroup>
 
 </Project>
