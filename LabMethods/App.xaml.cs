@@ -8,9 +8,7 @@ using System.Windows;
 
 namespace LabMethods
 {
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+    
     public partial class App : Application
     {
     }
