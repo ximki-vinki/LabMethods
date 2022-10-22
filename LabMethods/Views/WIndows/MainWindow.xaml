@@ -13,6 +13,44 @@
     <Window.DataContext>
         <vm:MainWindowViewModel />
     </Window.DataContext>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Файл">
+                <MenuItem Header="Выход" />
+            </MenuItem>
+            <MenuItem Header="Помощь">
+                <MenuItem Header="О программе" />
+            </MenuItem>
+        </Menu>
+        <StatusBar Height="20" DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <TextBlock Text="1234" />
+            </StatusBarItem>
+        </StatusBar>
+        <TabControl>
+            <TabItem Header="Вкладка 1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="120" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="116" />
+                        <ColumnDefinition Width="281" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Row="0" Grid.Column="0">
+                        dadsd
+                    </TextBox>
+                    <TextBox Grid.Row="0" Grid.Column="1">
+                        ad
+                    </TextBox>
+                </Grid>
 
-    <Grid />
+            </TabItem>
+            <TabItem Header="Вкладка 2" />
+
+        </TabControl>
+
+    </DockPanel>
+
 </Window>
