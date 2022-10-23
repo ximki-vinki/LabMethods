@@ -11,10 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabMethodsConsole", "Test\L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabMethodsTests", "LabMethodsTests\LabMethodsTests.csproj", "{D3A868DD-8371-4378-B8EB-3CCB3DABF3A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "Test\TestLib\TestLib.csproj", "{381300D6-54DC-4E46-8567-0AC5758D80CB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibFramework", "Test\TestLibFramework\TestLibFramework.csproj", "{ABD2020B-4920-41A2-B488-60DA693DC165}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,14 +29,6 @@ Global
 		{D3A868DD-8371-4378-B8EB-3CCB3DABF3A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3A868DD-8371-4378-B8EB-3CCB3DABF3A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3A868DD-8371-4378-B8EB-3CCB3DABF3A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{381300D6-54DC-4E46-8567-0AC5758D80CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{381300D6-54DC-4E46-8567-0AC5758D80CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{381300D6-54DC-4E46-8567-0AC5758D80CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{381300D6-54DC-4E46-8567-0AC5758D80CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ABD2020B-4920-41A2-B488-60DA693DC165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABD2020B-4920-41A2-B488-60DA693DC165}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABD2020B-4920-41A2-B488-60DA693DC165}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABD2020B-4920-41A2-B488-60DA693DC165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,8 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DC583515-2FD2-44CF-890E-05D2BD83E1AE} = {31C4E748-C36A-4F94-9D05-204D999F3A75}
 		{D3A868DD-8371-4378-B8EB-3CCB3DABF3A1} = {31C4E748-C36A-4F94-9D05-204D999F3A75}
-		{381300D6-54DC-4E46-8567-0AC5758D80CB} = {31C4E748-C36A-4F94-9D05-204D999F3A75}
-		{ABD2020B-4920-41A2-B488-60DA693DC165} = {31C4E748-C36A-4F94-9D05-204D999F3A75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0EF738A-00F4-4B57-B5C5-84DC371CB88B}
