@@ -3,8 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
+using LabMethods.Infrastracture.Commands;
+using LabMethods.ViewModels.Base;
 
-namespace LabMethods.ViewModels.Base
+namespace LabMethods.ViewModels
 {
     internal class MainWindowViewModel : ViewModel
     {
@@ -36,5 +40,30 @@ namespace LabMethods.ViewModels.Base
 
         #endregion
 
+        #region Команды
+
+        #region CloseApplicationCommand
+
+        public ICommand CloseApplicationCommand { get; }
+
+        private void OnCloseApplicationCommandExecuted(object p)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private bool CanCloseApplicationCommandExecuted(object p) => true;
+
+        #endregion
+
+        #endregion
+        public MainWindowViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
+
+            #endregion
+
+        }
     }
 }
