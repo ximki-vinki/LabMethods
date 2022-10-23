@@ -24,7 +24,7 @@
         </Menu>
         <StatusBar Height="20" DockPanel.Dock="Bottom">
             <StatusBarItem>
-                <TextBlock Text="1234" />
+                <TextBlock Text="{Binding Status}" />
             </StatusBarItem>
         </StatusBar>
         <TabControl>
