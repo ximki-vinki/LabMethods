@@ -5,11 +5,13 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using LabMethods.Data.DataDB;
 
 namespace LabMethods
 {
     
     public partial class App : Application
     {
+         
     }
 }
