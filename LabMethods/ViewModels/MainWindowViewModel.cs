@@ -73,6 +73,18 @@ namespace LabMethods.ViewModels
 
         #endregion
 
+        #region ChangeTabIndexCommand
+
+        public ICommand ChangeTabIndexCommand { get; }
+
+        private bool CanChangeTabIndexCommandExecute(object p) => _SelectedPageIndex >= 0;
+
+        private void OnChangeTabIndexCommandExecuted(object p)
+        {
+            if (p is null) return;
+            SelectedPageIndex += Convert.ToInt32(p);
+        }
+        #endregion
         #endregion
         public MainWindowViewModel()
         {
@@ -80,6 +92,7 @@ namespace LabMethods.ViewModels
 
             CloseApplicationCommand = new LambdaCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecuted);
 
+            ChangeTabIndexCommand = new LambdaCommand(OnChangeTabIndexCommandExecuted, CanChangeTabIndexCommandExecute);
             #endregion
             using (var context = new DataContext())
             {

@@ -29,45 +29,53 @@
             </StatusBarItem>
         </StatusBar>
         <Grid>
-<TabControl>
-            <TabItem Header="Вкладка 1">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="20" />
-                        <RowDefinition Height="120" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="116" />
-                        <ColumnDefinition Width="281" />
-                    </Grid.ColumnDefinitions>
-                    <TextBox Grid.Row="0" Grid.Column="0">
-                        dadsd
-                    </TextBox>
-                    <TextBox Grid.Row="0" Grid.Column="1">
-                        ad
-                    </TextBox>
-                </Grid>
+            <TabControl SelectedIndex="{Binding SelectedPageIndex}">
+                <TabItem Header="Вкладка 1">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="20" />
+                            <RowDefinition Height="120" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="116" />
+                            <ColumnDefinition Width="281" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Row="0" Grid.Column="0">
+                            dadsd
+                        </TextBox>
+                        <TextBox Grid.Row="0" Grid.Column="1">
+                            ad
+                        </TextBox>
+                    </Grid>
 
-            </TabItem>
-            <TabItem Header="Вкладка 2" />
-            <TabItem>
-                <TabItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <fa:SvgAwesome Height="13" Icon="Solid_ArrowLeft" />
-                    </StackPanel>
-                </TabItem.Header>
-            </TabItem>
-            <TabItem>
-                <TabItem.Header>
-                    <StackPanel Orientation="Horizontal">
-                        <fa:SvgAwesome Height="13" Icon="Solid_ArrowRight" />
-                    </StackPanel>
-                </TabItem.Header>
-            </TabItem>
-        </TabControl>
+                </TabItem>
+                <TabItem Header="Вкладка 2" />
+                <TabItem>
+                    <TabItem.Template>
+                        <ControlTemplate>
+                            <Button Command="{Binding ChangeTabIndexCommand}" CommandParameter="-1" >
+                                <Button.Content>
+                                    <fa:SvgAwesome Height="13" Icon="Solid_ArrowLeft" />
+                                </Button.Content>
+                            </Button>
+                        </ControlTemplate>
+                    </TabItem.Template>
+                </TabItem>
+                <TabItem>
+                    <TabItem.Template>
+                        <ControlTemplate>
+                            <Button Command="{Binding ChangeTabIndexCommand}" CommandParameter="+1">
+                                <Button.Content>
+                                    <fa:SvgAwesome Height="13" Icon="Solid_ArrowRight" />
+                                </Button.Content>
+                            </Button>
+                        </ControlTemplate>
+                    </TabItem.Template>
+                    </TabItem>
+            </TabControl>
 
         </Grid>
-        
+
 
     </DockPanel>
 
